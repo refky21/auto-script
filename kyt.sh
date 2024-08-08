@@ -11,6 +11,7 @@
 NS=$( cat /etc/xray/dns )
 PUB=$( cat /etc/slowdns/server.pub )
 domain=$(cat /etc/xray/domain)
+REPO="https://raw.githubusercontent.com/refky21/auto-script/main"
 #color
 grenbo="\e[92;1m"
 NC='\e[0m'
@@ -18,13 +19,13 @@ NC='\e[0m'
 apt update && apt upgrade
 apt install python3 python3-pip git
 cd /usr/bin
-wget https://raw.githubusercontent.com/yBh1ZaSVDsdgDdgHDddDgdgdhSGsdGbWseMP/v3.0lts/main/limit/bot.zip
+wget $REPO/limit/bot.zip
 unzip bot.zip
 mv bot/* /usr/bin
 chmod +x /usr/bin/*
 rm -rf bot.zip
 clear
-wget https://raw.githubusercontent.com/yBh1ZaSVDsdgDdgHDddDgdgdhSGsdGbWseMP/v3.0lts/main/limit/kyt.zip
+wget $REPO/limit/kyt.zip
 unzip kyt.zip
 pip3 install -r kyt/requirements.txt
 
