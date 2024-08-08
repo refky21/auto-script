@@ -8,13 +8,13 @@ apt install -y && apt update -y && apt upgrade -y && apt install lolcat -y && ap
 
 ### Install UDP
 ```
-wget https://raw.githubusercontent.com/elvaretta-store/UDP-Custom/main/udp-custom.sh && chmod +x udp-custom.sh && ./udp-custom.sh
+wget https://raw.githubusercontent.com/refky21/auto-script/main/udp-custom.sh && chmod +x udp-custom.sh && ./udp-custom.sh
 ```
 
 
 ### FixSSH
 ```
-wget -q -O fix "https://raw.githubusercontent.com/elvaretta-store/FixSSH/main/ws-700.sh" && bash fix
+wget -q -O fix "https://raw.githubusercontent.com/refky21/fix-ssh/main/ws-700.sh" && bash fix
 ```
 
 
