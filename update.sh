@@ -15,7 +15,7 @@ dateFromServer=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Dat
 biji=$(date -d "0 days" +"%Y-%m-%d")
 ipsaya=$(wget -qO- ipinfo.io/ip)	
 
-URL_SERVER="https://nps.jualapak.com/akses/data.json"
+URL_SERVER="https://api.jsonbin.io/v3/b/6808ba6e8561e97a5005ac44"
 AKSES=$(curl -s "$URL_SERVER")
 
 REPO="https://raw.githubusercontent.com/refky21/auto-script/main"
@@ -88,7 +88,7 @@ fun_bar() {
     tput cnorm
 }
 res1() {
-    wget ${REPO}/limit/menu.zip
+    wget ${REPO}/limit/menu-update.zip
     clear
     unzip menu.zip
     chmod +x menu/*

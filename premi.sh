@@ -1079,7 +1079,7 @@ print_install "Enable Service"
 # Fingsi Install Script
 function instal(){
 clear
-	#Cek_Validasi
+	Cek_Validasi
     first_setup
     nginx_install
     base_package
@@ -1097,7 +1097,7 @@ clear
     ins_openvpn
     ins_backup
     ins_swab
-   # ins_Fail2ban
+    ins_Fail2ban
     ins_epro
     ins_restart
     menu
