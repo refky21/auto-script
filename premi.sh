@@ -13,7 +13,7 @@ dateFromServer=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Dat
 biji=$(date -d "0 days" +"%Y-%m-%d")
 ipsaya=$(wget -qO- ipinfo.io/ip)	
 
-URL_SERVER="https://raw.githubusercontent.com/refky21/auto-script/refs/heads/main/akses.json"
+URL_SERVER="https://raw.githubusercontent.com/refky21/auto-script/main/akses.json"
 AKSES=$(curl -s "$URL_SERVER")
 
 # Service Get Json
