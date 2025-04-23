@@ -1079,7 +1079,7 @@ print_install "Enable Service"
 # Fingsi Install Script
 function instal(){
 clear
-	Cek_Validasi
+	#Cek_Validasi
     first_setup
     nginx_install
     base_package
